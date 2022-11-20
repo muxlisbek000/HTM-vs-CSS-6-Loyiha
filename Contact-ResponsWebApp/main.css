@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-bg{
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/heder.jpg");
+    background-position: center -400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: .4rem 0;
+    letter-spacing: 4px;
+}
+.line div{
+    margin: 0 .2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background-color: #f7327a;
+    border-radius: 5px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line div:nth-child(2){
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #f7327a;
+}
+
+.text{
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.contact-bg .text{
+    margin: 1.6 0;
+}
+
+/* ----------------Contact Bg End ----------------- */
+/* ----------------Contact Body Finish ----------------- */
+
+.contact-body{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.contact-info{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-info span{
+    display: block;
+}
+
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+
+.contact-info span i{
+    font-size: 2rem;
+    padding: 0.9rem; 
+}
+
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: .4rem;
+}
+
+/* -----------------Contact-Body End------- */
+/* -----------------Contact-Form Finish------- */
+
+
+.contact-form{
+    padding: 2rem 0;
+    border-top: 1px solid #c7c7c7;
+}
+
+.contact-form form{
+    padding: 1rem;
+}
+.form-control{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: .7rem;
+    margin: .6rem 0;
+    font-size: 1rem;
+    outline: none;
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -3px rgba(48,48,48,1);
+}
+
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: .6rem;
+}
+
+.send-btn{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f7327a;
+    border-radius: 5px;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+    transition:all .5s ease;
+    border: none;
+}
+.send-btn:hover{
+    opacity: .8;
+}
+
+.contact-form>div img{
+    width: 85%;
+}
+
+.contact-form>div{
+    margin: 0 auto ;
+    text-align: center;
+}
+/* ----------------Contact Form End------------------ */
+/* ---------------Contact-Maps Start----------------- */
+.map iframe{
+    width: 100%;
+    height: 50vh;
+}
+
+/* ---------------Contact-Maps Finish----------------- */
+
+/* ----------------Contact Footer Finish------------------ */
+.contact-footer{
+    padding: 2rem 0; 
+    background-color: #000;
+    text-align: center;
+}
+
+.contact-footer h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0.4rem;
+    transition: all .5s ease;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.social-links a:hover{
+    color: #f7327a;
+    border-color: #f7327a;
+}
+
+
+/*------------------- Media Query-------------------- */
+
+@media screen and (min-width:768px){
+    .contact-bg{
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:992px) {
+    .contact-bg .text{
+        width: 50%;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+}
+@media screen and (min-width:1200px) {
+    .contact-info{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .contact-form{
+        padding:2rem 4rem;
+    }
+}
+
+
+
+
+
